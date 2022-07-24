@@ -1,0 +1,557 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+} 
+
+html, body { 
+    height: 100%; 
+    background: -webkit-gradient(linear, left bottom, left top, from(#2e2d2d), to(#000000)) fixed;
+} 
+
+.clear { 
+    clear: both;
+}
+
+.container { 
+    max-width: 1280px; 
+    margin: 0 auto;
+}
+
+header { 
+    width: 100%; 
+    height: 90vh; 
+    max-height: 800px; 
+    padding: 40px 2%; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment:fixed; 
+    background-image: url(../img/in.png); 
+    box-shadow: 1px 3px 6px rgba(146, 146, 146, 0.596)
+} 
+
+header > .container > .logo { 
+    position: absolute; 
+    top: 25px; 
+    left: 0; 
+    float: left; 
+    width: 145px; 
+    height: 105px; 
+    background-image: url(../img/logo.png); 
+    background-position: center;  
+    background-size: cover; 
+    border-radius: 50%;
+}
+
+header > .container > nav { 
+    float: right;
+} 
+
+nav.mobile-menu { 
+    cursor: pointer; 
+    display: none; 
+    width: 32px; 
+    height: 32px; 
+    background: url(../img/nav.png); 
+    background-size: 100% 100%;
+} 
+
+nav.mobile-menu > ul { 
+    opacity: 0; 
+    transition: 1.5s; 
+    background-color: white; 
+    position: absolute; 
+    left: 0; 
+    top: 80px; 
+    width: 100%;   
+    list-style-type: none; 
+    text-align: center;
+} 
+ 
+nav.mobile-menu:hover ul { 
+    display: block; 
+    opacity: 1;  
+} 
+
+nav.mobile-menu ul > li:hover { 
+    background-color: black; 
+    color: white;
+}
+ 
+nav.mobile-menu > ul > li { 
+    background-image:linear-gradient(#e149ff, #6262fc); 
+    padding: 20px 0; 
+    border: 1px solid black; 
+} 
+
+nav.mobile-menu > ul > li > a { 
+    color: black; 
+    font-weight: bold;  
+    text-decoration: none; 
+}
+
+header > .container > nav.desktop-menu > ul { 
+    list-style-type: none;
+}
+
+header > .container > nav.desktop-menu > ul > li { 
+    float: left; 
+    margin: 0 20px;
+} 
+
+header> .container > nav.desktop-menu > ul > li > a { 
+    text-decoration: none; 
+    color: #d3d3d3; 
+    font-weight: 700;
+} 
+
+/* Aqui começa a senssao1 */
+
+section.sessao1 > .container { 
+    max-width: 1200px; 
+    height: calc(100% +30px);
+}
+
+section.sessao1 { 
+    width: 100%;  
+    padding: 0 2%; 
+    height: 400px;
+} 
+
+.texto-sessao1 {  
+    float: left; 
+    margin-top: 40px; 
+    padding: 0 40px; 
+    width: 50%; 
+    color: #d3d3d3; 
+
+} 
+
+.texto-sessao1 > h2 { 
+    font-size: 26px; 
+    font-weight: 300;
+} 
+
+.texto-sessao1 > p { 
+    margin-top: 20px; 
+    font-size: 15px; 
+    text-align: justify;
+} 
+ 
+.texto-sessao1 > p > a { 
+    text-decoration: none; 
+    font-weight: 700; 
+    color:#cc00c2;
+}
+
+.texto-sessao1 > ul { 
+    margin-top: 5px;  
+    font-size: 15px; 
+    list-style-position: inside;
+}
+ 
+.texto-sessao1 > ul > li { 
+    margin: 5px 0; 
+    float: left; 
+    width: 100%;
+} 
+
+.btn1-texto { 
+    background-color: #494949; 
+    width: 165px; 
+    height: 44px; 
+    margin-top: 15px;  
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 42px; 
+    box-shadow: 1px 2px 2px black; 
+    cursor: pointer;  
+
+} 
+ 
+.btn1-texto > a { 
+    text-decoration: none; 
+    font-weight: 700; 
+    color:#d3d3d3;
+}
+
+.programmer-sessao1 { 
+    float: left; 
+    position: relative; 
+    top: 90px; 
+    width: 50%;   
+    height: 330px;
+    background-image: url('../img/programmer.png'); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+} 
+
+/* Aqui começa a senssao2 */
+section.sessao2 { 
+    margin-top: 30px; 
+    margin-top: 80px 2%;
+    background-color: #2e2d2d; 
+    text-align: center;
+} 
+
+section.sessao2 .container { 
+    max-width: 700px;
+}
+
+section.sessao2  h2 { 
+    padding-top: 15px;   
+    color: #d3d3d3; 
+    font-weight: 700;
+} 
+
+section.sessao2 p { 
+    margin-top: 30px; 
+    max-width: 700px; 
+    color: #d3d3d3; 
+    display: inline-block; 
+} 
+
+section.sessao2 img { 
+    width: 100%;  
+    margin-top: 40px;
+} 
+ 
+/* Aqui começa a senssao3 */
+section.sessao3 { 
+    width: 100%; 
+    color: #d3d3d3;
+} 
+
+section.sessao3 .part1 { 
+    color: #d3d3d3; 
+    float: left; 
+    width: 50%; 
+    padding: 30px 0 50px 10px;
+} 
+
+section.sessao3 .wraper-part1 { 
+    max-width: 600px; 
+    float: right; 
+    padding-right: 30px;
+}
+
+section.sessao3 h2 { 
+    font-weight: 700; 
+    font-style: italic; 
+    font-size: 23px;
+} 
+
+section.sessao3 ul { 
+    list-style-type: none; 
+    font-size: 15px; 
+    line-height: 35px; 
+    margin-top: 10px;
+} 
+
+section.sessao3 .part2 { 
+    float: left; 
+    width: 50%;  
+    padding: 30px 10px 90px 10px; 
+    background-color:#2e2d2d; 
+    text-align: justify; 
+} 
+
+section.sessao3 .sobre-autor { 
+    float: left; 
+    max-width: 600px; 
+    padding-left: 30px;
+} 
+
+section.sessao3 .titulo-autor { 
+    width: 100%; 
+    float:left
+} 
+
+section.sessao3 .wraper-titulo-autor {  
+    float: left; 
+    padding-bottom: 10px;
+}
+ 
+section.sessao3 .titulo-autor h2 {   
+    padding-right: 20px;
+} 
+
+section.sessao3 .titulo-autor p { 
+    font-size: 13px; 
+    font-style: italic; 
+}
+
+section.sessao3 .imagem-autor { 
+    float: left; 
+    width: 40px; 
+    height: 40px; 
+    position: relative; 
+    top:-4px; 
+    border-radius: 20px; 
+    background-image: url(../img/bonitao.png); 
+    background-size: cover;
+} 
+
+section.sessao3 .texto-autor { 
+    float: left; 
+    width: 100%;  
+} 
+
+section.sessao3 .slider-bullets { 
+    width: 100%; 
+    float: left; 
+    padding-left: 30px; 
+    margin-top: 40px;
+}
+ 
+section.sessao3 .slider-bullets span { 
+    width: 16px; 
+    height: 16px; 
+    float: left; 
+    cursor:pointer; 
+    margin-right: 8px; 
+    border-radius: 8px;   
+    background-color: rgb(200,200,200);
+} 
+ 
+/* Aqui começa a senssao4*/
+section.sessao4{
+	padding:100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form{
+	margin-top:15px;
+}
+
+.form form input[type=text]{
+	width: 90%;
+	max-width: 480px;
+	margin-top:8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border:1px solid rgb(200,200,200);
+}
+
+.form form textarea{
+	width: 90%;
+	margin-top:8px;
+	max-width: 480px;
+	padding:15px;
+	border:1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	border: 0;
+	background-color:#494949; 
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.87);
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top:15px;
+	border-radius: 30px;
+}
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	padding:0 10px;
+	color: white;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top:10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{ 
+    float: left;
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	padding-top:100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border:5px solid rgb(200,200,200);
+}
+
+footer { 
+    padding: 40px 2%; 
+    color: #919191; 
+    background-color: #2e2d2d;
+} 
+ 
+footer p:nth-of-type(1)  {
+    float: left;
+} 
+
+footer p:nth-of-type(2) { 
+    float: right;
+} 
+
+.errorInput { 
+    border: 2px solid rgb(238, 32, 32) !important; 
+
+}
+
+
+@media screen and (max-width: 810px) { 
+    header { 
+        background: url(../img/bsite2.png); 
+        background-size: cover; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat; 
+        background-position:center; 
+    }
+    section.sessao1 { 
+        padding: 40px 2%; 
+        height: auto; 
+    } 
+    nav.desktop-menu { 
+        display: none;
+    }  
+     
+    nav.mobile-menu { 
+        display: block;
+    }  
+
+    .texto-sessao1 { 
+        float: none; 
+        margin-top: 0; 
+        position: static; 
+        width: 100%; 
+        text-align: center; 
+        display: inline-block; 
+    } 
+    .texto-sessao1 > ul > li { 
+        float: none; 
+        text-align: left;
+    } 
+    .btn1-texto { 
+        display: inline-block;
+    } 
+    .programmer-sessao1 { 
+        display: none;
+    } 
+    
+    section.sessao3 { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+
+    section.sessao3 .part1, section.sessao3 .part2 { 
+        width: 100%;  
+        padding-right: 10%;
+    }
+    
+    section.sessao4 .container{
+        text-align: center;
+    }
+    
+    .form {
+        float: none;
+        width: 100%;
+    }
+    
+    .form p{
+        display: inline-block;
+        float: none;
+    }
+    
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding:0 8%;
+        margin-top:40px;
+    }
+    
+    .map-wraper3{
+        margin-top:10px;
+        width: 100%;
+        padding-top: 100%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        padding-top:0;
+    }
+
+} 
+
+@media screen and (max-width: 580px) {
+    .part1 { 
+        width: 100%; 
+        padding: 40px 0;
+    } 
+
+    .part2 { 
+        width: 100%; 
+        padding: 40px 0;
+    } 
+
+    section.sessao2 img { 
+        top:10px; 
+        margin-top: 20px;
+    } 
+     
+    footer { 
+        text-align: center;
+    } 
+     
+    footer p:nth-of-type(1)  {
+        float: none;
+    } 
+    
+    footer p:nth-of-type(2) { 
+        float: none; 
+        margin-top: 8px;
+    }
+
+}
