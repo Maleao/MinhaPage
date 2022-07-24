@@ -40,7 +40,24 @@ window.onload = function() {
 	initialize();
 
 	var conteudo = '<p style="color:black;font-size:13px;padding:10px 0;border-bottom:1px solid black;">Meu endereço</p>';
-	addMarker(-21.74965,-43.36597,'',conteudo);
+	addMarker(-21.74965,-43.36597,'',conteudo); 
+
+	//menu mobile 
+	 
+	$('.mobile-menu').click(function(){ 
+		$(this).find('ul').slideToggle()
+	}) 
+
+	//scroll dinamico 
+
+	$('nav a').click(function(){ 
+		var href = $(this).attr('href'); 
+		var offSetTop = $(href).offset().top; 
+		 
+		$('html,body').animate({'scrollTop':offSetTop}) 
+		return false;
+	}) 
+	 
 
 	//plugin mask 
 	 
