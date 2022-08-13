@@ -68,7 +68,7 @@
 
             </div><!--programmer-sessao-->
 
-        </div><!--container-->
+        </div><!--container--> 
 
     </section><!--sessao1--> 
      
@@ -145,48 +145,61 @@
              <div class="slider-bullets"> 
              </div><!--slider-bullets-->
          </div><!--part2--> 
-         <div class="clear"></div>
+         <div class="clear"></div> 
 
-    </section><!--sessao3--> 
+    </section><!--sessao3-->  
 
     <section id="contato" class="sessao4">
         <div class="container">
             <div class="form">
-                <h2>Entre em contato</h2>
-                <p> Deixe suas dúvidas, comentários, elogios, críticas e afins... Todo bom argumento é bem-vindo!</p>
-    
-                <form name="contact" method="POST" data-netlify="true">
-                    <input id="name" type="text" name="nome" placeholder="Nome*">
-                    <input id="email" type="text" name="email" placeholder="E-mail*"> 
-                    <input type="text" name="telefone" placeholder="Telefone">
-                    <textarea id="msg" name="mensagem" placeholder="Mensagem*"></textarea>
-                    <div class="clear"></div>
-                    <div><input id="submit" type="submit" value="Enviar"></div>
+                <h2>Entre em contato</h2> 
+
+                <form name="contact" method="POST" data-netlify="true" id="form">
+                    <div> 
+                        <input id="name" type="text" name="nome" placeholder="Nome*" class="inputs required"> 
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span> 
+                    </div>
+                    <div> 
+                        <input id="email" type="text" name="email" placeholder="E-mail*" class="inputs required"> 
+                        <span class="span-required">Digite um e-mail válido</span> 
+                    </div> 
+                    <div> 
+                        <input type="text" name="telefone" placeholder="Telefone" 
+                        class="inputs"> 
+                    </div>
+                    <div> 
+                        <textarea class="inputs" id="descricao" name="mensagem" cols="25" rows="10" placeholder="Fale um pouco sobre você...*"></textarea>  
+                        <p class="p">Sexo:</p> 
+                    
+                    <div class="box-select"> 
+                        <div> 
+                            <input type="radio" id="m" value="m" name="sexo"> 
+                            <label for="m">Masculino</label>
+                        </div> 
+                        <div> 
+                            <input type="radio" id="f" value="f" name="sexo"> 
+                            <label for="f">Feminino</label>
+                        </div> 
+                        <div> 
+                            <input type="radio" id="o" value="o" name="sexo"> 
+                            <label for="o">Outros</label>
+                        </div> 
+                    </div><!--box-select-->
+                    <button type="submit">Enviar</button>
                 </form>
     
             </div><!--form-->
-    
-        <div class="map-wraper">
-        <h2>Faça uma visita</h2>
-            <div class="map-wraper3">
-            <div class="map-wraper2"> 
-            <div class="map" id="mapa"></div><!--map-->
-            </div><!--map-wraper2-->
-            </div><!--map-wraper-3-->
-        </div><!--map-wraper-->
-    
-            <div class="clear"></div>
-        </div><!--container-->
-    </section><!--sessao4-->
+        </div><!--container--> 
+
+    </section><!--sessao4--> 
 
     <footer> 
         <div class="container">
             <p>Todos os Direitos Reservados</p> 
             <p>mtdevjf@gmail.com</p> 
         <div class="clear"></div> 
-        </div><!--container--> 
+        </div><!--container-->  
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3vQstA05lL-7sr6wh5LMntW1_GSLVvVY" defer type="text/javascript"></script> 
     <script src="js/jquery.js"></script> 
     <script src="js/jquery.mask.js"></script>
     <script src="js/functions.js"></script> 
